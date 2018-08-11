@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRegister"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/todo"
+            android:padding="10dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="19dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_edit_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/ivProfile"
+            app:layout_constraintRight_toRightOf="@id/ivProfile" />
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/name"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivProfile" />
+
+        <EditText
+            android:id="@+id/etProfileName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/enter_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@id/tvProfileName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivProfile" />
+
+        <TextView
+            android:id="@+id/tvProfileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/email"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileName" />
+
+        <EditText
+            android:id="@+id/etProfileEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/enter_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@id/tvProfileEmail"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etProfileName" />
+
+        <!--<TextView
+            android:id="@+id/tvRegistrationPsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvRegistrationEmail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/etRegistrationPsw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:imeOptions="actionNext"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tvRegistrationPsw"
+            app:layout_constraintTop_toBottomOf="@id/etRegistrationEmail"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/tvRegistrationConfirmPsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmPassword"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvRegistrationPsw"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/etRegistrationConfirmPsw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:imeOptions="actionNext"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tvRegistrationConfirmPsw"
+            app:layout_constraintTop_toBottomOf="@id/etRegistrationPsw"
+            android:layout_marginEnd="10dp" />-->
+
+        <TextView
+            android:id="@+id/tvProfileContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/contact"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileEmail" />
+
+        <EditText
+            android:id="@+id/etProfileContact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/enter_contact"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@id/tvProfileContact"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileEmail" />
+
+        <Button
+            android:id="@+id/btnProfileUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/update"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etProfileContact" />
+
+        <ProgressBar
+            android:id="@+id/circularProgressBar"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
